@@ -1,4 +1,4 @@
-import "./metodologias.css";
+import "./Metodologias.css";
 
 function Metodologias() {
   return (
