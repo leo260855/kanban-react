@@ -1,0 +1,88 @@
+/* ===============================
+   VIDEOS – ESTILO PRO
+================================ */
+
+.videos-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.videos-title {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+.videos-subtitle {
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* TARJETA */
+.video-card {
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(155, 70, 255, 0.35);
+  transition: 0.3s;
+}
+
+.video-card.active {
+  box-shadow: 0 0 25px rgba(155, 70, 255, 0.45);
+  border-color: rgba(180, 100, 255, 0.9);
+}
+
+/* ENCABEZADO BOTÓN */
+.video-header {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 18px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.video-header:hover {
+  background: rgba(155, 70, 255, 0.15);
+}
+
+/* CONTADOR */
+.count {
+  font-size: 0.85rem;
+  background: rgba(155, 70, 255, 0.25);
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+/* CONTENIDO */
+.video-content {
+  padding: 18px 22px;
+  background: rgba(0, 0, 0, 0.4);
+  animation: fadeSlide 0.35s ease;
+}
+
+.video-content ul {
+  padding-left: 20px;
+}
+
+.video-content li {
+  margin-bottom: 8px;
+  opacity: 0.9;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
