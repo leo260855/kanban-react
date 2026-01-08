@@ -248,3 +248,62 @@ p {
   animation-iteration-count: infinite, infinite;
   animation-timing-function: linear, ease-in-out;
 }
+
+
+
+
+/* =========================
+   AJUSTES PARA CELULAR
+   ========================= */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 16px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav a,
+  nav button {
+    font-size: 14px;
+  }
+
+  .hero,
+  .main,
+  .container {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .badge,
+  .tag {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .card,
+  .section {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
